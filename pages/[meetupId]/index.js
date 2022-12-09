@@ -7,8 +7,8 @@ const MeetupDetails = (props) => {
   return (
     <Fragment>
         <Head>
-          <title>Add a new Meetup</title>
-          <meta name="description" content="Browse a huge list of highly active React meetups!"/>
+          <title>{props.meetupData.title}</title>
+          <meta name="description" content={props.meetupData.description}/>
         </Head>
         <MeetupDetail
           image={props.meetupData.image}
